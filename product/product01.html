@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>裸色</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/product.css"> 
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/js-style.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <div class="news">Packs are on SALE!!!</div>
+
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top">
+      
+    <div class="container"> <!-- 使用container將導覽列置中 -->
+      <a class="navbar-brand" href="../home.html">
+        <div id="logo">LOGO</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="../home.html" >Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <button type="button" class="btn nav-link" data-toggle="modal" data-target="#cart" style="background-color:#f8f9fa;">Cart</button>
+             <!-- <a class="nav-link" data-toggle="modal" data-target="#cart">Cart</a> -->
+          </li>
+          
+         <li class="nav-item">
+            <a class="nav-link" href="../allitem.html">Shop</a>
+          </li>
+         
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+
+<!-- 右半部選單-s -->
+        <div class="navright">
+    
+        <div id="headerLinks">
+          <a href="../login.html" title="Login">Login</a>
+          <a href="../signup.html" title="Register">Register</a>
+        </div> 
+       <div id="search">
+              <input class="searchtext form-control w-50 mr-sm-2" type="search" placeholder="find..." aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+        </div>
+<!-- 右半部選單-e -->
+
+   
+
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+        <!-- 互動式窗標題設置 -->
+        <h5 class="modal-title" id="cart">warning</h5>
+        <!-- 右上關閉按鈕 -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+
+        <div class="modal-body">
+        <p>Please sign in first.</p>
+        
+        </div>
+        <div class="modal-footer">
+         
+          <!-- 關閉按鈕 -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div id="offer"> 
+    <img src="../images/offer.png" alt="" style="display:block; margin:auto;background-size: contain;background-repeat: no-repeat;">  
+
+  </div>
+
+
+
+
+  <div class="content">
+
+    <div class="sidebarleft col-8">
+      <img src="../images/polish1.gif" style="width: 75%;height: 75%;">
+      <div class="empty">empty</div>
+     <img src="../images/other1_2.png" style="width: 75%;height: 75%;">
+    </div>
+
+    <div class="productInfo col-4">
+      <h1>裸色</h1>
+      <p class="price">$200</p>
+      
+
+
+       <div class="buybtn">
+        <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cart">add to cart</button> -->
+      </div>
+
+
+      <p class="productContent">裸米色，屬於象牙色色階 以中性色為主要調性，所以不論是與暖色系的紅、棕、黃
+      色，或是冷色系的藍、綠，甚至連灰色系都能搭入的相當完美 </p>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+
+  <footer> 
+    
+    <ul>
+        <b>
+        <li class="Help"><a href="#">About Us</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </b>
+      </ul>
+    
+      <h1>Customer Center</h1>
+      <h2>Weekdays 10:00~17:00 Sat,Sun,Holidays off</h2>
+    
+  </footer>
+
+
+
+
+
+</div><!-- wrap div -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color: #FFFFFF;
+	margin: 0;
+}
+*{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	margin: 0px;
+	padding: 0;
+}
+#backtotop{
+	color:#FFFFFF; 
+	background-color:#53D3DE;	
+	width:36px; 
+	height:36px; 
+	line-height:36px; 
+	font-size:16px; 
+	text-align:center; 
+	text-decoration: none;
+	position:fixed; 
+	bottom:20px; 
+	right:30px; 	
+	z-index:999; 
+	opacity: 0.8;
+	display: none;
+}
+#content{
+	margin: 50px auto;
+	padding: 0px auto;
+	width: 80%;
+	height: 550px;
+	background-color: #fff;
+}
+#backtotop:hover{
+	opacity: 1;
+	border:1px green solid;
+}
+
+.news{
+	font-size: 22px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	background-color: #b9cfdb;
+	height: 40px;
+}
+
+
+#logo {
+	background-image: url(../images/logo.gif);
+	text-indent: -9999px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 139px;
+	text-align: center;
+	
+}
+.navright{
+	display: block;
+	float: left;
+	margin-left: 200px;
+}
+#search{
+	width: 180px;
+	display: inline-block;
+}
+
+.searchtext{
+	display: inline-block;
+	float: left;
+	width: 50px;
+	text-align: center;	
+}
+/* div for Links in header */
+#headerLinks {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* Links in header */
+#headerLinks a {
+	display: inline-block;
+	text-decoration: none;
+	color: gray;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+}
+#footer{
+	clear: both;
+	background-color: #b9cfdb;
+	text-align: center;
+	margin-top: -7px;
+}
+
+#footer ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#footer li{
+	margin-top: 20px;
+	float: left;
+}
+#footer li a{
+	color: #ffffcc;
+	line-height: 50px;
+	font-size: 26px;
+	margin-right: 45px;
+	text-decoration:none;
+}
+
+#footer li.Help a{
+	margin-left: 45px;
+}
+
+#footer h1{
+	font-size: 20px;
+	clear: both;
+	color: #ffffcc;
+	line-height: 35px;
+}
+
+#footer h2{
+	font-size: 14px;
+	color: #ffffcc;
+	line-height: 35px;
+	padding-bottom: 10px;
+}

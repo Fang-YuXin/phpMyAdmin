@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Allitem</title>
+<link href="css/allitem.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/js-style.js"></script> 
+
+
+
+
+</head>
+<body>
+
+
+
+
+<!-- Main Container -->
+
+  <div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <div class="news">Packs are on SALE!!!</div>
+
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top">
+      
+    <div class="container"> <!-- 使用container將導覽列置中 -->
+      <a class="navbar-brand" href="home.html">
+        <div id="logo">LOGO</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="home.html" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+             <a class="nav-link" data-toggle="modal" data-target="#cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="allitem.html">Shop</a>
+          </li>
+         
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+
+<!-- 右半部選單-s -->
+        <div class="navright">
+    
+        <div id="headerLinks">
+          <a href="login.html" title="Login">Login</a>
+          <a href="signup.html" title="Register">Register</a>
+        </div> 
+       <div id="search">
+              <input class="searchtext form-control w-50 mr-sm-2" type="search" placeholder="find..." aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+        </div>
+<!-- 右半部選單-e -->
+
+   
+
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+        <!-- 互動式窗標題設置 -->
+        <h5 class="modal-title" id="cart">warning</h5>
+        <!-- 右上關閉按鈕 -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+
+        <div class="modal-body">
+        <p>Please sign in first.</p>
+        
+        </div>
+        <div class="modal-footer">
+         
+          <!-- 關閉按鈕 -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"><a href="product/product01.html"><img src="images/polish1.gif" alt="" class="cards"/></a>
+      <h4>裸色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">裸米色，屬於象牙色色階 以中性色為主要調性，所以不論是與暖色系的紅、棕、黃色，或是冷色系的藍、綠，甚至連灰色系都能搭入的相當完美</p>
+      <div class="buybtn">
+        <a href="#" data-toggle="modal" data-target="#cart" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+      
+    </div>
+
+
+    <div class="thumbnail"> <a href="product/product02.html" ><img src="images/polish2_3.gif" alt="" class="cards"/></a>
+      <h4>基底油-粉嫩</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">對於膚色容易看起來蒼白的人，粉色飾底就能改善這樣的問題。
+擦一層可當一般基本的基底油使用。
+擦兩層以上就能依照自己的喜好調整潤色程度。
+算是多用途型的全新概念指甲油。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" class="btn-outline-info  btn-lg active" role="button" >add to cart</a>
+      </div>
+
+
+    </div>
+    <div class="thumbnail"> <a href="product/product03.html" data-toggle="modal" data-target="#cart"><img src="images/polish3_3.gif" alt="" class="cards"/></a>
+      <h4>基底油-紅潤</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">這個顏色是以我們天生的指甲下方透出的自然血色為發想，就像運動後，血液循環讓全身發熱時，那種健康紅。
+這個色基本上任何色調的皮膚都能使用，紅潤效果都非常顯著。</p>
+    <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" class="btn-outline-info  btn-lg active" role="button" >add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="product/product04.html" data-toggle="modal" data-target="#cart"><img src="images/polish4_3.gif" alt="" class="cards"/></a>
+      <h4>粉橘色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">粉、橘色在不同的膚色上有不同的效果。如果有人問，膚色不是很白、剛結束渡假皮膚曬黑了，但想擦可愛的顏色， 那我會推薦這個</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"><a href="#"><img src="images/polish5_3.jpg" alt="" class="cards"/></a>
+      <h4>錫蘭黃</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">介於昏黃與緗色之間的顏色。除了單擦也能用來協調黃、綠色階，或是當成使整個畫面沉靜下來的關鍵色</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish6.jpg" alt="" class="cards"/></a>
+      <h4>藤鼠色</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">淡灰藍紫，其中加入的藍是靛藍，使得整個顏色視覺感具有平靜深度。也有人把像這樣的顏色稱為藤鼠色。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish7.jpg" alt="" class="cards"/></a>
+      <h4>冷棕色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">近幾年，中性色受到越來越多重視，把中性色調整得更為溫暖，也是打造質感的重點。低飽和度自然色也將一路延續到秋冬。
+ </p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish32.png" alt="" class="cards"/></a>
+      <h4>粉裸色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">粉裸色，最近肌膚的顏色
+是一種概念，而非特定單一色彩 存在自然與性感之間的</p>
+  
+    <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish9.png" alt="" class="cards"/></a>
+      <h4>深酒紅</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">
+        新年不免俗一定要來個喜氣的紅。
+        是酒紅色也有人說是勃艮第紅。
+        膚色屬於冷調或是中間調非常適合也夠顯白。
+      </p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish10.png" alt="" class="cards"/></a>
+      <h4>絳紅</h4>
+      <p class="tag">NT$250</p>
+      <p class="text_column">一直以來都受歡迎的顏色，每個人都該擁有的一款紅色指彩。古代說的指尖蔻丹就是說著這樣的紅。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish11.png" alt="" class="cards"/></a>
+      <h4>暖酒紅</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">充滿了法國的那種優雅，無論冷皮或暖皮都能輕鬆駕馭的，適合深藏不漏個人魅力的你。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish12.png" alt="" class="cards"/></a>
+      <h4>洋酒紅</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">每個女性都該擁有一款心暮的紅色指彩。
+      是想要達到濃郁深沈但又顯得出紅的樣子，有點神秘的感覺。想要終極酒紅的人這色很值得試試。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish13.png" alt="" class="cards"/></a>
+      <h4>胭脂紅</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">介於胭脂色與退紅色之間，不搶眼卻有著古典美感
+參考一些老布料的顏色融入，讓整體的氛圍更加Vintage</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish14.png" alt="" class="cards"/></a>
+      <h4>陽橙</h4>
+      <p class="tag">NT$250</p>
+      <p class="text_column">帶給你俏皮的夏日郊遊氣氛，讓你在人群中更顯眼的暖陽色。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish15.png" alt="" class="cards"/></a>
+      <h4>珊瑚粉</h4>
+      <p class="tag">NT$350</p>
+      <p class="text_column">青春夏季蜜桃色，尋尋覓覓仍然是最耀眼的顏色。如果還期待又怕受傷害可以拿來當作跳色的選擇。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish16.png" alt="" class="cards"/></a>
+      <h4>南瓜橘</h4>
+      <p class="tag">NT$250</p>
+      <p class="text_column">秋冬秀場上的強檔色，混合著大地色調的橘，如果你在找顯白的橘色，可以試試這個。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish17.png" alt="" class="cards"/></a>
+      <h4>芥末黃</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">介於昏黃與緗色之間的顏色。除了單擦也能用來協調黃、綠色階的跳色創作，或是當成使整個畫面沉靜下來的關鍵色</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+        <div class="thumbnail"> <a href="#"><img src="images/polish18.png" alt="" class="cards"/></a>
+      <h4>秋意綠</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">以 #GoldenLime 為發想這個綠，不像春夏裡的那麼嬌嫩
+它界於黃綠之間，又多了點紅衰翠減的秋意</p>
+<div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish19.png" alt="" class="cards"/></a>
+      <h4>黃木棕</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">微調其中黃、橙來讓裸膚色更符合自然色感。然後再來是關注顯白程度，這之間的調和讓大家擦上後都能是天生迷人的模樣</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish20.png" alt="" class="cards"/></a>
+      <h4>寶藍色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">藍色，令人心情穩定 理性的顏色
+      </p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish21.png" alt="" class="cards"/></a>
+      <h4>沉澱藍</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">Pantone發表2020年度代表色「經典藍」#ClassicBlue 可以是浩瀚的宇宙夜空也能是遼闊無邊的海洋。
+屬於平靜、穩定、自信、知性的顏色</p>
+<div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish22.png" alt="" class="cards"/></a>
+      <h4>深藍</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">別以為這樣的顏色很誇張，這個藍色完全顯現像是外國朋友很愛形容亞洲女孩的神秘氣息。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+        <div class="thumbnail"> <a href="#"><img src="images/polish23.png" alt="" class="cards"/></a>
+      <h4>墨灰藍</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">介於晴山藍與蟹青之間，也是非常古典的顏色，這種藍足以呈現休閒，能使人心情放鬆</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish24.png" alt="" class="cards"/></a>
+      <h4>溫柔紫</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">以春季裡的花為發想，大自然裡的顏色都是柔和不突兀的。
+通常這顏色不會第一時間在春天裡想到</p>
+<div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish25.png" alt="" class="cards"/></a>
+      <h4>百合白</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">因為亞洲女生的膚色基底是黃，然後又有偏紅或是偏藍，這些裡面又分比較白或是曬黑，等等的膚色差異，所以才需要這些微調色</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish26.png" alt="" class="cards"/></a>
+      <h4>正黑</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">不需要多加形容的正黑色，塗一層就會有顯眼的反光感。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish27.png" alt="" class="cards"/></a>
+      <h4>淺茶褐色</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">另一個溫暖的灰。中性色調，不同溫度的灰，
+亞洲女生天生黑髮與深色眼眸，這樣的色調特別相襯</p>
+<div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+      <div class="thumbnail"> <a href="#"><img src="images/polish28.png" alt="" class="cards"/></a>
+      <h4>藕荷色</h4>
+      <p class="tag">NT$250</p>
+      <p class="text_column">一種淺淡且中性的紫色，沉穩又帶點樸實的柔嫩感</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    </div>
+    
+
+
+
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/polish29.png" alt="" class="cards"/></a>
+      <h4>中性灰</h4>
+      <p class="tag">NT$250</p>
+      <p class="text_column">利用不慍不火的中庸灰色來展現俐落</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish30.png" alt="" class="cards"/></a>
+      <h4>粉裸色</h4>
+      <p class="tag">NT$200</p>
+      <p class="text_column">粉裸色，最近肌膚的顏色
+是一種概念，而非特定單一色彩 存在自然與性感之間的</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/polish8.png" alt="" class="cards"/></a>
+      <h4>藍綠色</h4>
+      <p class="tag">NT$300</p>
+      <p class="text_column">屬於藍與綠之間的曖昧色
+不同光源，和不同深淺的顏色放在一起，便會產生不同的視覺感受。</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+
+    <div class="thumbnail"> 
+      <a href="#"><img src="images/pack_1.png" style="padding-top: 20px;" class="cards"/></a>
+      <h4>Pack 1</h4>
+      <p class="tag">NT$800</p>
+      <p class="text_column">三件一組
+基底油、亮光上層油、霧甲油。一次滿足指甲彩繪時的基本底油需求!
+    </p>
+    <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>    
+
+  </div>
+
+
+
+<div class="gallery">
+    
+
+    <div class="thumbnail"> <a href="#"><img src="images/polish_pack_2.gif" style="padding-top: 20px;" class="cards"/></a>
+      <h4>Pack 2</h4>
+      <p class="tag">NT$1000</p>
+      <p class="text_column">貝殼光感指甲油+光亮上層油是新手的好夥伴，基本彩色指甲油與基礎商層油的組合，值得您擁有!</p>
+      <div class="buybtn">
+      <a data-toggle="modal" data-target="#cart" href="#" class="btn-outline-info  btn-lg active" role="button" aria-pressed="true">add to cart</a>
+      </div>
+    </div>
+  </div>
+  
+   
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+        <!-- 互動式窗標題設置 -->
+        <h5 class="modal-title" id="cart">warning</h5>
+        <!-- 右上關閉按鈕 -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+
+        <div class="modal-body">
+        <p>Please sign in first.</p>
+        
+        </div>
+        <div class="modal-footer">
+         
+          <!-- 關閉按鈕 -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Footer Section -->
+
+<section>
+  <div class="py-4" style="background-color: #b9cfdb">
+    <div class="container">
+      <div class="row">
+
+      <div class="col-lg-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.574701957455!2d120.55654901482197!3d24.081277084427324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346938e9c332a5dd%3A0x7fd08ddba6e6a0cc!2z5ZyL56uL5b2w5YyW5bir56-E5aSn5a246YCy5b635qCh5Y2A!5e0!3m2!1szh-TW!2stw!4v1655130242243!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+
+      <div class="col-lg-4" style="text-align: center">
+        <ul style="list-style-type: none;">
+          <b>
+          <li ><a href="help.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Service</a></li>
+          <li><a href="help.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Payment</a></li>
+          <li><a href="help.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Contact Us</a></li>
+          <li><a href="help.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">About Us</a></li>
+          </b>
+        </ul>
+      
+      </div>
+      
+      <div class="col-lg-4" style="text-align: center">
+        <h1 style="font-size: 30px;color: #ffffcc;line-height: 35px;">Customer Center</h1>
+        <h2 style="font-size: 26px;color: #ffffcc;line-height: 35px;">Weekdays 10:00~17:00 Sat,Sun,Holidays off</h2>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

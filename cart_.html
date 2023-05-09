@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cart</title>
+	<link href="css/cart.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/js-style.js"></script> 
+
+
+</head>
+<body>
+	<div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <div class="news">Packs are on SALE!!!</div>
+
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top">
+      
+    <div class="container"> <!-- 使用container將導覽列置中 -->
+      <a class="navbar-brand" href="home_.html">
+        <div id="logo">LOGO</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="home_.html" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link" href="cart_.html">Cart</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="allitem_.html">Shop</a>
+          </li>
+         
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+
+<!-- 右半部選單-s -->
+        <div class="navright">
+    
+        <div id="headerLinks">
+          <a href="php/logout.php" title="Login">Logout</a>
+
+        </div> 
+       <div id="search">
+              <input class="searchtext form-control w-50 mr-sm-2" type="search" placeholder="find..." aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+        </div>
+<!-- 右半部選單-e -->
+
+   
+
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+
+
+<div id="content">
+  <table width="1050px" style="text-align: center;" >
+      <tr height="50px">
+        <td class="col-1">pid</td>
+        <td class="col-2">pphoto</td>
+        <td class="col-2">pname</td>
+        <td class="col-2">price</td>
+        <td class="col-2">pnum</td>
+        <td class="col-2">totalprice</td>
+        <td class='col-1'>amount</td>
+      </tr>
+    </table>
+    <iframe src="php/cart.php" frameborder="2" style="width: 1050px; height:450px; overflow:hidden; border: none;"></iframe> 
+        
+    <button class="btn btn-lg btn-info" type="submit" data-toggle="modal" data-target="#payment" >pay</button>
+</div>
+
+
+<div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-header">
+        <!-- 互動式窗標題設置 -->
+        <h5 class="modal-title" id="pay">Payment&Delivery</h5>
+        <!-- 右上關閉按鈕 -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+<form action="php/pay.php" method="POST">
+    <div class="modal-body">
+      <div class="col-6" style="float:left">付款方式
+          <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="payment" id="exampleRadios1" value="信用卡付款" checked>
+          <label class="form-check-label" for="exampleRadios1">信用卡付款</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="payment" id="exampleRadios2" value="現金(含貨到付款)">
+        <label class="form-check-label" for="exampleRadios2">
+        現金(含貨到付款)
+        </label>
+        </div>
+      </div>
+
+
+      <div class="col-6" style="float:right">運送方式
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery" id="exampleRadios1" value="超商取貨" checked>
+          <label class="form-check-label" for="exampleRadios1">超商取貨</label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery" id="exampleRadios2" value="宅配">
+          <label class="form-check-label" for="exampleRadios2">宅配</label>
+         </div>
+      </div>
+    </div>
+    
+    <div class="modal-footer">
+
+      <input class="btn btn-info" type="submit" name="submit" id="submit" value="確認送出">
+       <!--  <a herf="php/pay.php" name="button" class="btn btn-info" style="color:#fff">確認送出</a> -->
+    </div>
+</form> 
+
+  </div>
+  </div>
+</div>
+   
+
+
+<section>
+  <div class="py-4" style="background-color: #b9cfdb">
+
+
+
+    <div class="container">
+      <div class="row">
+
+      <div class="col-lg-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.574701957455!2d120.55654901482197!3d24.081277084427324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346938e9c332a5dd%3A0x7fd08ddba6e6a0cc!2z5ZyL56uL5b2w5YyW5bir56-E5aSn5a246YCy5b635qCh5Y2A!5e0!3m2!1szh-TW!2stw!4v1655130242243!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+
+      <div class="col-lg-4" style="text-align: center">
+        <ul style="list-style-type: none;">
+          <b>
+          <li ><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Service</a></li>
+          <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Payment</a></li>
+          <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Contact Us</a></li>
+          <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">About Us</a></li>
+          </b>
+        </ul>
+      
+      </div>
+      
+      <div class="col-lg-4" style="text-align: center">
+        <h1 style="font-size: 30px;color: #ffffcc;line-height: 35px;">Customer Center</h1>
+        <h2 style="font-size: 26px;color: #ffffcc;line-height: 35px;">Weekdays 10:00~17:00 Sat,Sun,Holidays off</h2>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>

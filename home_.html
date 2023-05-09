@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nailpolish</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/home.css"> 
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/js-style.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <div class="news">Packs are on SALE!!!</div>
+
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top">
+      
+    <div class="container"> <!-- 使用container將導覽列置中 -->
+      <a class="navbar-brand" href="home_.html">
+        <div id="logo">LOGO</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="home_.html" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link" href="cart_.html">Cart</a>
+          </li>
+          
+         <li class="nav-item">
+            <a class="nav-link" href="allitem_.html">Shop</a>
+          </li>
+         
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+
+<!-- 右半部選單-s -->
+        <div class="navright">
+    
+        <div id="headerLinks">
+          <a href="php/logout.php" title="Login">Logout</a>
+        </div> 
+       <div id="search">
+              <input class="searchtext form-control w-50 mr-sm-2" type="search" placeholder="find..." aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+        </div>
+<!-- 右半部選單-e -->
+
+   
+
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+
+<!-- 輪播-s -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!-- 預設只有三張圖輪播 目前增加至五張圖   -->
+  <ol class="carousel-indicators">
+  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>    
+	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>     	
+  </ol>
+
+<!-- 
+使用背景圖去取代 img 的手法，主要是因背景圖比較大張，希望能將重心放在圖片垂直、水平的中間
+有些圖片不夠寬 也會自動滿版延伸
+s-carousel-item s-bg-cover 
+-->
+  <div class="carousel-inner">
+    <div class="carousel-item s-carousel-item s-bg-cover active" style="background-image: url(images/c1.png);">
+<!--       <img class="d-block w-100" src="images/c1.jpg" alt=""> -->
+		  <!-- <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/c2.png);">
+<!--       <img class="d-block w-100" src="images/c2.jpg" alt=""> -->
+		 <!--  <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/c3.png);">
+<!--       <img class="d-block w-100" src="images/c3.jpg" alt=""> -->
+		  <!-- <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/c4.png);">
+<!--       <img class="d-block w-100" src="images/c4.jpg" alt=""> -->
+		  <!-- <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>    
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/c5.png);">
+<!--       <img class="d-block w-100" src="images/c5.jpg" alt=""> -->
+		  <!-- <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>    
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/c6.png);">
+<!--       <img class="d-block w-100" src="images/c5.jpg" alt=""> -->
+		  <!-- <div class="carousel-caption d-none d-md-block px-3">
+		    
+		  </div> -->
+    </div>  
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- 輪播-e -->
+
+
+<!-- 三欄內容-s -->
+<section class="py-4 text-white" style="background-color:#b9cfdb">
+	<div class="container">
+		<div class="row">
+
+<!-- -------img1------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+				<a href="#"><img src="images/polish2_3.gif" alt="" style="height: 314px; width: 250px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:10px white solid">
+				<p class="s-p-text-align" style="margin-left: 30px;margin-right: 30px;margin-top: 10px;"></a>對於膚色容易看起來蒼白的人，粉色飾底就能改善這樣的問題。 擦一層可當一般基本的基底油使用。 擦兩層以上就能依照自己的喜好調整潤色程度。 算是多用途型的全新概念指甲油。
+				</p>
+			</div>
+
+<!-- -------img2------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-user-cog fa-4x"></i></div>
+				<a href="#"><img src="images/polish3_3.gif" alt="" style="height: 314px; width: 250px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:10px white solid"></a>
+				<p class="s-p-text-align" style="margin-left: 30px;margin-right: 30px;margin-top: 10px;">這個顏色是以我們天生的指甲下方透出的自然血色為發想，就像運動後，血液循環讓全身發熱時，那種健康紅。 這個色基本上任何色調的皮膚都能使用，紅潤效果都非常顯著。
+				</p>			
+			</div>
+
+<!-- -------img3------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-user-secret fa-4x"></i></div>
+				<a href="#"><img src="images/polish4_3.gif" alt="" style="height: 314px; width: 250px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:10px white solid"></a>
+				<p class="s-p-text-align" style="margin-left: 30px;margin-right: 30px;margin-top: 10px;">粉、橘色在不同的膚色上有不同的效果。如果有人問，膚色不是很白、剛結束渡假皮膚曬黑了，但想擦可愛的顏色， 那我會推薦這個。
+				</p>			
+			</div>
+		</div>
+	</div>	
+</section>
+<!-- 三欄內容-e -->
+
+
+<!-- 二欄式一半全版面，一半固定式-s -->
+<section class="container-fluid py-4 bg-light text-white" style="position: relative;height: 300px;">
+	<div class="row">
+<!-- 左半部		 -->
+		<div class="col-md-5 s-bg-cover" style="background-image: url(images/polish_pack_2.gif);position: absolute;top:0;bottom:0;background-size: contain;background-repeat: no-repeat;">		
+		</div>
+		
+<!-- 右半部		 -->		
+		<div class="container">
+			<div class="row justify-content-end s-text-md-dark">
+
+				<div class="col-md-7">
+					<h5>組合包介紹</h5>
+					<p class="s-p-text-align">
+						組合包主打友善新手，每個組合包都優惠超值，其中有基礎指加油組合包及貝殼光與上層透明保護膠組合，眾多優惠趕緊把握!
+					</p>
+					<a href="pack.html" class="btn btn-outline-info btn-sm mt-3 btn-lg">了解更多</a>
+
+<!-- 再切兩欄-s -->
+					<!-- <div class="row mt-3">
+						<div class="col-md-6">
+							<h5>菜單介紹 1</h5>
+							<p class="s-p-text-align">
+								小孩成就不可以農村尺寸他是主頁還會硬件市委唯一素質建設安全登，鑒定閲讀不用基於法人顏色，不能下載並在請大家核心小區較高愛情適用大，笑話我覺得政策你是傳，萬元神話全面初步不到頁面收入工商以下名字權益期待快捷拒。
+							</p>						
+						</div>
+						<div class="col-md-6">
+							<h5>菜單介紹 2</h5>
+							<p class="s-p-text-align">
+								設置之下對我你是股份有，本公司享受類型而是特性評級兒子他們的三大批評一，一口徹底招生背景不錯市場價接口保護過了試驗維修選項皮，熱點同時拍攝這位生日關鍵字要有風險。
+							</p>													
+						</div>
+					</div> -->
+<!-- 再切兩欄-e -->
+
+				</div>						
+			</div>
+		</div>
+
+
+	</div>
+</section>
+<!-- 二欄式一半全版面，一半固定式-e -->
+
+
+
+
+<!-- GoogleMap地圖 & form 表單-s -->
+
+<section>
+	<div class="py-4" style="background-color: #b9cfdb">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-lg-4">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.574701957455!2d120.55654901482197!3d24.081277084427324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346938e9c332a5dd%3A0x7fd08ddba6e6a0cc!2z5ZyL56uL5b2w5YyW5bir56-E5aSn5a246YCy5b635qCh5Y2A!5e0!3m2!1szh-TW!2stw!4v1655130242243!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			</div>
+
+
+			<div class="col-lg-4" style="text-align: center">
+				<ul style="list-style-type: none;">
+		      <b>
+		      <li ><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Service</a></li>
+		      <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Payment</a></li>
+		      <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">Contact Us</a></li>
+		      <li><a href="help_.html" style="color: #ffffcc;line-height: 50px;font-size: 26px;text-decoration:none;">About Us</a></li>
+		      </b>
+	    	</ul>
+			
+			</div>
+			
+			<div class="col-lg-4" style="text-align: center">
+				<h1 style="font-size: 30px;color: #ffffcc;line-height: 35px;">Customer Center</h1>
+      	<h2 style="font-size: 26px;color: #ffffcc;line-height: 35px;">Weekdays 10:00~17:00 Sat,Sun,Holidays off</h2>
+
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- GoogleMap地圖 & form 表單-e -->
+
+
+<!-- 回到頁首的按鈕-s -->
+<a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+<!-- 回到頁首-e -->
+
+
+
+
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
